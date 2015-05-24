@@ -29,6 +29,12 @@ import android.preference.PreferenceActivity;
 import android.text.format.DateUtils;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.preference.PreferenceCategory;
+import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
+import android.provider.Settings;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 
 import com.android.deskclock.alarms.AlarmNotifications;
 import com.android.deskclock.worldclock.Cities;
@@ -50,6 +56,12 @@ public class SettingsActivity extends PreferenceActivity
             "snooze_duration";
     public static final String KEY_VOLUME_BEHAVIOR =
             "volume_button_setting";
+    public static final String KEY_FLIP_ACTION =
+            "flip_action";
+    public static final String KEY_ALARM_SETTINGS = 
+	    "key_alarm_settings";    
+    public static final String KEY_SHAKE_ACTION =
+            "shake_action";    
     public static final String KEY_AUTO_SILENCE =
             "auto_silence";
     public static final String KEY_CLOCK_STYLE =
